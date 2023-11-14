@@ -15,3 +15,8 @@ def make_negative( number ):
         return number
     else: 
         return number * -1
+    
+# another solution I could have used that I discovered on code wars solution page
+
+def make_negative( number ):
+    return -abs(number)
