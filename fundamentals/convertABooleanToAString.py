@@ -6,3 +6,9 @@
 
 def boolean_to_string(b):
     return "True" if b else "False"
+
+
+# another solution found on the code wars solution page
+
+def boolean_to_string(b):
+    return str(b)
