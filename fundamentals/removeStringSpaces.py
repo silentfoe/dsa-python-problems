@@ -11,3 +11,8 @@
 
 def no_space(x):
     return x.replace(' ','')
+
+# another solution I saw on the code wars solution page: 
+
+def no_space(x):
+    return "".join(x.split())
