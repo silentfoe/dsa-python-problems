@@ -16,3 +16,17 @@ def find_it(seq):
     for num in seq:
         if seq.count(num) % 2 == 1:
             return num
+        
+# clever solution using dictionary:
+
+def find_it(seq):
+    item = {}
+    
+    for x in seq:
+        if x in item:
+            item[x] += 1
+        else:
+            item[x] = 1
+    for x in item:
+        if (item[x] % 2) != 0:
+            return x
